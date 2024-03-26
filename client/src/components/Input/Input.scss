@@ -1,0 +1,29 @@
+.input {
+  border: none;
+  padding: 14px 8px;
+  outline: inherit;
+  border-radius: 7px;
+  opacity: 0.6;
+  transition: all 0.3s;
+
+  &.default {
+    background: $light;
+    border: 1px solid $grey;
+
+    &:focus {
+      border-color: $blue;
+    }
+  }
+
+  &.soft {
+    border-bottom: 1px solid $blue;
+    background: transparent;
+    border-radius: 0;
+  }
+  &.error {
+    border-color: $red;
+  }
+  &:focus {
+    opacity: 1;
+  }
+}

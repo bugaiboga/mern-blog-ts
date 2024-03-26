@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+@import "./normilize.scss";
+
+@import "./variables.scss";
+
+body {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container {
+  max-width: 1040px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* components */
+@import "../components/Navbar/Navbar.scss";
+@import "../components/SignActions/SignActions.scss";
+@import "../components/Button/Button.scss";
+@import "../components/Logo/Logo.scss";
+@import "../components/Input/Input.scss";
+
+/* pages */
+@import "../pages/SignInPage/SignInPage.scss";
+@import "../pages/SignUpPage/SignUpPage.scss";
+@import "../pages/WritePost/WritePost.scss";
+@import "../pages/Post/Post.scss";

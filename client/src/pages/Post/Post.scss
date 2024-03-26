@@ -1,0 +1,89 @@
+.post__page {
+  max-width: 740px;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 0 auto;
+
+  .header {
+    margin-bottom: 20px;
+
+    .user {
+      display: flex;
+      gap: 10px;
+
+      .name {
+        color: #000;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+      }
+      .date {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+      }
+      .avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 25%;
+      }
+    }
+  }
+  .image {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .content {
+    .title {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 160%;
+      margin-bottom: 24px;
+    }
+    .description {
+      font-size: 20px;
+      line-height: 170%;
+    }
+  }
+
+  .comments {
+    border-top: 1px dashed $blue-dark;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+
+    .send__comment {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+      margin: 10px 0;
+
+      &-textarea {
+        padding: 5px;
+        resize: none;
+        width: 100%;
+        border-radius: 7px;
+      }
+    }
+
+    .comment {
+      display: flex;
+      .avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 25%;
+      }
+
+      .content {
+        .message {
+          margin: 0;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}

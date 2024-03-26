@@ -1,0 +1,84 @@
+.post__write {
+  width: 100%;
+  height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-title {
+    color: #12101d;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+  }
+  &-error {
+    padding: 15px;
+    text-align: center;
+    color: $red;
+  }
+
+  .wrapper {
+    border: 1px solid $grey-light;
+    padding: 15px;
+    background: $light;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    max-width: 400px;
+  }
+  .form {
+    min-width: 100%;
+  }
+  .categories {
+    border: none;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    &__title {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    &__buttons {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+  }
+  .fieldset {
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .image__select {
+      position: relative;
+
+      .delete {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+      }
+
+      .img {
+        max-width: 100%;
+      }
+    }
+    .submit {
+      background-color: $blue;
+      padding: 10px 5px;
+      border: none;
+      color: $light;
+      border-radius: 7px;
+      opacity: 0.9;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

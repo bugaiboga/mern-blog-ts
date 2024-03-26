@@ -1,0 +1,33 @@
+.sign {
+  .sign-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .user {
+    position: relative;
+    cursor: pointer;
+
+    &__menu {
+      border: 1px solid $grey-light;
+      position: absolute;
+      padding: 0;
+      top: -15px;
+      left: -5px;
+      background: $light;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    &__action {
+      display: flex;
+      align-items: center;
+      padding: 7px 14px;
+      gap: 13px;
+      border-bottom: 1px solid $grey-light;
+      cursor: pointer;
+
+      &:hover {
+        background: $grey-light;
+      }
+    }
+  }
+}

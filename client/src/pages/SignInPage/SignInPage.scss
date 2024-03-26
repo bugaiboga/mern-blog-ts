@@ -1,0 +1,75 @@
+.sign-page {
+  width: 100%;
+  height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper {
+    border: 1px solid $grey-light;
+    padding: 15px;
+    background: $light;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+  }
+  .title {
+    color: $dark;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .subtitle {
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0;
+    color: $dark;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  .wrapper {
+    margin-top: -200px;
+    width: 360px;
+  }
+
+  .form {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+
+    &__error {
+      padding: 11px 5px;
+      text-align: center;
+      color: $red;
+    }
+  }
+
+  .submit {
+    padding: 14px 8px;
+    border-radius: 7px;
+    border: none;
+    background-color: $blue;
+    color: $light;
+    cursor: pointer;
+  }
+
+  .links {
+    padding: 11px 0;
+    display: flex;
+    color: $blue;
+    justify-content: space-between;
+
+    p {
+      cursor: pointer;
+      span {
+        margin-left: 5px;
+        text-decoration: underline;
+      }
+    }
+  }
+}

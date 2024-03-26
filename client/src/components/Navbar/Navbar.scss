@@ -1,0 +1,40 @@
+.navbar {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 64px;
+  }
+  .logo {
+    color: $dark;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: min-content;
+    padding: 5px 7px;
+    border-radius: 7px;
+    border: 1px solid $grey;
+    background: transparent;
+
+    &__input {
+      border: none;
+      padding: 2px 3px;
+      outline: inherit;
+    }
+  }
+  .categoryes {
+    .list {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .item {
+      color: $dark;
+    }
+  }
+}
